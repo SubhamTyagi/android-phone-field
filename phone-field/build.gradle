@@ -3,9 +3,11 @@ plugins {
 	id 'maven-publish'
 }
 
+
 android {
     compileSdkVersion 34
     buildToolsVersion "34.0.0"
+    namespace "io.github.subhamtyagi.phone"
 
     defaultConfig {
         minSdkVersion 14
