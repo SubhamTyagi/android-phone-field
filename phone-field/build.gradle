@@ -31,7 +31,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'io.github.subhamtyagi.phone'
             artifactId = 'phone-lib'
-            version = '0.2.4'
+            version = '0.2.5'
             from components.findByName('release')
         }
     }
