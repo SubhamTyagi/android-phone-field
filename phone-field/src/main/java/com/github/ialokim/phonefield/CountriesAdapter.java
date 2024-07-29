@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import io.github.subhamtyagi.phone.R;
+
 /**
  * Adapter for the countries list spinner
  * Created by Ismail on 5/6/16.

@@ -29,6 +29,8 @@ import java.util.Locale;
 
 import androidx.annotation.IdRes;
 
+import io.github.subhamtyagi.phone.R;
+
 /**
  * PhoneField is a custom view for phone numbers with the corresponding country flag, and it uses
  * libphonenumber to validate and format the phone number.

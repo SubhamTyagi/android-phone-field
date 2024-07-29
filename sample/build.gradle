@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion compileSdk
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+    namespace "com.github.ialokim.phonefield.sample"
 
     defaultConfig {
-        applicationId "com.github.ialokim.phonefield.sample"
-        minSdkVersion minSdk
-        targetSdkVersion targetSdk
-        versionCode vCode
-        versionName vName
+        minSdkVersion 14
+        targetSdkVersion 34
+        versionCode 24
+        versionName "0.2.4"
     }
     buildTypes {
         release {

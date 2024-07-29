@@ -6,6 +6,8 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.ViewGroup;
 
+import io.github.subhamtyagi.phone.R;
+
 /**
  * Implementation of PhoneField that uses {@link TextInputLayout}
  * Created by Ismail on 5/6/16.

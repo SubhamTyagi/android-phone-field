@@ -6,6 +6,8 @@ import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
+import io.github.subhamtyagi.phone.R;
+
 /**
  * Implementation of PhoneField that uses an {@link EditText}
  * Created by Ismail on 5/6/16.
