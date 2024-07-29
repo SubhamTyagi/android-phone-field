@@ -1,8 +1,11 @@
-apply plugin: 'com.android.library'
+plugins {
+	id 'com.android.library'
+	id 'maven-publish'
+}
 
 android {
     compileSdkVersion compileSdk
-    buildToolsVersion "28.0.3"
+    buildToolsVersion "34.0.0"
 
     defaultConfig {
         minSdkVersion minSdk
@@ -18,8 +21,23 @@ android {
     }
 }
 
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'io.github.subhamtyagi.phone'
+            artifactId = 'phone-lib'
+            version = '0.2.4'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}
+
+
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'com.googlecode.libphonenumber:libphonenumber:8.10.3'
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.13.42'
+    implementation 'com.google.android.material:material:1.12.0'
 }
